@@ -1,11 +1,4 @@
-let htmlcode = `
-    <span class='color_code' style='color:#181B39' data-color-code='#181B39'>■</span>
-    <span class='color_code' style='color:#262a2e' data-color-code='#262a2e'>■</span>
-    <span class='color_code' style='color:#192734' data-color-code='#192734'>■</span>
-    <span class='color_code' style='color:#1c483b' data-color-code='#1c483b'>■</span>
-    <span class='color_code' style='color:#bf7800' data-color-code='#bf7800'>■</span>
-    <span class='color_code' style='color:#83094f' data-color-code='#83094f'>■</span>
-`;
+let htmlcode = ["#181B39","#262a2e","#192734","#1c483b","#bf7800","#83094f"].map(elm =>`<span class='color_code' style='color:${elm}' data-color-code='${elm}'>■</span>`).join("\n");
 const basecolor = "#262a2e";
 let cookiefn = function (val) {
     let CodeColor = val;

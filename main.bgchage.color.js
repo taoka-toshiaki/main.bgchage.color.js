@@ -24,7 +24,7 @@ for (const key in ColorCodeObject) {
         const element = ColorCodeObject[key];
         element.addEventListener("click", function (element) {
             for (let ii = 0; ii < document.styleSheets.length; ii++) {
-                if (String(document.styleSheets[ii].href).match(/example.com\/style\.css\?ver=/)) {
+                if (String(document.styleSheets[ii].href).match(/example\.com\/style\.css\?ver=/)) {
                     for (let i = 0; i < document.styleSheets[ii].cssRules.length; i++) {
                         let element_css_code = document.styleSheets[ii].cssRules[i];
                         let rgbfn = function (hex) {
@@ -51,7 +51,7 @@ for (const key in ColorCodeObject) {
 }
 (function(){
         for (let ii = 0; ii < document.styleSheets.length; ii++) {
-            if (String(document.styleSheets[ii].href).match(/example.com\/style\.css\?ver=/)) {
+            if (String(document.styleSheets[ii].href).match(/example\.com\/style\.css\?ver=/)) {
                 for (let i = 0; i < document.styleSheets[ii].cssRules.length; i++) {
                     let element_css_code = document.styleSheets[ii].cssRules[i];
                     let rgbfn = function (hex) {
